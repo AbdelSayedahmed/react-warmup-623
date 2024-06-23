@@ -23,10 +23,46 @@ function App() {
       duration: "45 minutes",
       calories: 200,
     },
+    {
+      id: 3,
+      name: "Afternoon Swim",
+      date: "2023-06-23",
+      duration: "60 minutes",
+      calories: 500,
+    },
+    {
+      id: 4,
+      name: "Night Walk",
+      date: "2023-06-24",
+      duration: "40 minutes",
+      calories: 150,
+    },
+    {
+      id: 5,
+      name: "Cycling",
+      date: "2023-06-25",
+      duration: "50 minutes",
+      calories: 400,
+    },
+    {
+      id: 6,
+      name: "HIIT Workout",
+      date: "2023-06-26",
+      duration: "30 minutes",
+      calories: 450,
+    },
+    {
+      id: 7,
+      name: "Strength Training",
+      date: "2023-06-27",
+      duration: "45 minutes",
+      calories: 350,
+    },
   ]);
 
-  // Function to add a new workout
-  const addWorkout = () => {};
+  const addWorkout = (newWorkout) => {
+    setWorkoutList([...workoutList, newWorkout]);
+  };
 
   return (
     <div className="App">
